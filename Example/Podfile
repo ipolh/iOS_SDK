@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'Use_Desk_iOS_SDK_Example' do
+  pod 'Use_Desk_iOS_SDK', :path => '../'
+
+  target 'Use_Desk_iOS_SDK_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+    pod 'FBSnapshotTestCase'
+  end
+end
