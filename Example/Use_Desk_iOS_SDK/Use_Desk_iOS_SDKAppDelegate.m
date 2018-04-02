@@ -7,12 +7,25 @@
 //
 
 #import "Use_Desk_iOS_SDKAppDelegate.h"
+#import "UDStartViewController.h"
+#import "Settings.h"
+
 
 @implementation Use_Desk_iOS_SDKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UDStartViewController *startViewController = [[UDStartViewController alloc] initWithNibName:@"UDStartViewController" bundle:nil];
+   
+    [[UINavigationBar appearance] setBarTintColor:navBarBackgroundColor];
+    
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:startViewController];
+    
+    [self.window makeKeyAndVisible];
+   
     return YES;
 }
 
@@ -42,5 +55,7 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
 
 @end

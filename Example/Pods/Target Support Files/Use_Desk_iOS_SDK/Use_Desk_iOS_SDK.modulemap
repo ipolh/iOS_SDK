@@ -1,0 +1,6 @@
+framework module Use_Desk_iOS_SDK {
+  umbrella header "Use_Desk_iOS_SDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

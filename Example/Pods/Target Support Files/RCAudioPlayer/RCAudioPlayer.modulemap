@@ -1,0 +1,6 @@
+framework module RCAudioPlayer {
+  umbrella header "RCAudioPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}
