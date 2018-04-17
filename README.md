@@ -16,9 +16,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 Use_Desk_iOS_SDK is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-```ruby
-pod 'Use_Desk_iOS_SDK'
-```
+
 
 ## Тестовое приложение
 
@@ -33,6 +31,22 @@ pod 'Use_Desk_iOS_SDK'
 -Выполнить команду `pod install`
 
 ## Скриншоты Тестового приложения
+<a href="https://imgur.com/0JaMLrQ"><img src="https://imgur.com/0JaMLrQ" title="source: imgur.com" /></a>
+<a href="https://imgur.com/BmvNVGc"><img src="https://imgur.com/BmvNVGc" title="source: imgur.com" /></a>
+<a href="https://imgur.com/qVKFEi2"><img src="http://i.imgur.com/vxXdOAK.png" title="source: imgur.com" /></a>
+
+## Добавление библиотеки в проект:
+
+Библиотека Use_Desk_iOS_SDK доступна через систему управления зависимостями [CocoaPods](http://cocoapods.org).
+
+-Добавьте строчку в Podfile вашего приложения
+```ruby
+pod "Use_Desk_iOS_SDK"
+```
+
+-Выполните команду в терминале `pod update`
+
+-Подключаем библиотеку  `#import "Use_Desk_iOS_SDK.h"`
 
 ## Author
 
