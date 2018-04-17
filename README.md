@@ -20,6 +20,20 @@ it, simply add the following line to your Podfile:
 pod 'Use_Desk_iOS_SDK'
 ```
 
+## Тестовое приложение
+
+Для запуска тестового приложения нужно:
+
+-Клонировать репозиторий
+
+-Запустить терминал
+
+-Перейти в скаченную дирректорию (в папку Example)
+
+-Выполнить команду `pod install`
+
+## Скриншоты Тестового приложения
+
 ## Author
 
 Maxim, ixotdog@gmail.com
