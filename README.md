@@ -129,6 +129,90 @@ pod "Use_Desk_iOS_SDK"
 
 ## Отправка оффлайн формы на сервер:
 
+| Переменная  | Тип | Описание |
+| -------------| ------------- | ------------- |
+| Message | NSString | тест сообщения |
+| URL | NSString | адрес отправки |
+
+
+#### Пример:
+```objective-c
+[UDS sendOfflineFormWithMessage:@”привет” url: @”https:dev.cany.ru” callback:^(BOOL success, NSString *error){
+}];
+```
+
+#### Блок возвращает следующие параметры:
+
+| Переменная  | Тип | Описание |
+| -------------| ------------- | ------------- |
+| Success | BOOL | статус отправки |
+| Error | NSString | тип ошибки |
+
+## CallBack – уведомления о действиях
+
+### Статус соединия:
+
+#### Пример:
+
+```objective-c
+UDS.connectBlock = ^(BOOL success, NSString *error) {
+      
+};
+```
+
+#### Блок возвращает следующие параметры:
+
+| Переменная  | Тип | Описание |
+| -------------| ------------- | ------------- |
+| Success | BOOL | статус соединения |
+| Error | NSString | тип ошибки |
+
+
+### Новое входящее сообщение:
+
+| Переменная  | Тип | Описание |
+| -------------| ------------- | ------------- |
+| incoming | BOOL | флаг входящего сообщения |
+| outgoing | BOOL | флаг исходящего сообщения |
+| text | NSString | текст сообщения |
+| picture_image | UIImage | изображение |
+| Error | NSString | тип ошибки |
+
+
+#### Пример:
+
+```objective-c
+UDS.newMessageBlock = ^(BOOL success, RCMessage *message) {
+        if(message.incoming)
+            [UDAudio playMessageIncoming];
+};
+```
+
+
+### Статус соединия:
+
+```objective-c
+UDS.errorBlock = ^(NSArray *errors) {
+        if(errors.count > 0)
+            hudErrorConnection.label.text = [errors objectAtIndex:0];
+        [hudErrorConnection showAnimated:YES];
+};
+```
+- Операторы завершили разговор
+
+#### Блок возвращает следующие параметры:
+
+| Переменная  | Тип | Описание |
+| -------------| ------------- | ------------- |
+| Message | RCMessage | сообщение с type 4 – пользователь завершил разговор |
+
+
+#### Пример:
+
+```objective-c
+UDS.feedbackMessageBlock =^(RCMessage *message) {
+ };
+```
 
 ## Author
 
