@@ -46,8 +46,30 @@ pod "Use_Desk_iOS_SDK"
 
 -Выполните команду в терминале `pod update`
 
--Подключаем библиотеку  `#import "Use_Desk_iOS_SDK.h"`
+-Подключаем библиотеку #import "UseDeskSDK.h"`
 
+#### Выполняем операцию инициализации чата параметрами:
+
+| Переменная  | Тип | Описание |
+| -------------| ------------- | ------------- |
+| CompanyID | NSString | идентификатор компании |
+| Email | NSString | почта клиента |
+| URL | NSString | адрес сервера с номером порта |
+
+Блок возвращает следующие параметры:
+
+| Переменная  | Тип | Описание |
+| -------------| ------------- | ------------- |
+| Success | BOOL | статус подключения к серверу |
+| Error | NSString | описание ошибки при неудачном подключении |
+
+#### Пример:
+```objective-c
+[UDS startWithCompanyID:@”1234567” email:@”lolo@yandex.ru” url:@”https:dev.company.ru” port:@”213” connectionStatus:^(BOOL success, NSString *error) {
+        
+    }];
+
+```
 ## Author
 
 Maxim, ixotdog@gmail.com
