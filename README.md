@@ -31,9 +31,9 @@ it, simply add the following line to your Podfile:
 -Выполнить команду `pod install`
 
 ## Скриншоты Тестового приложения
-<a href="https://imgur.com/0JaMLrQ"><img src="https://i.imgur.com/0JaMLrQ.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/qVKFEi2"><img src="https://i.imgur.com/qVKFEi2.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/BmvNVGc"><img src="https://i.imgur.com/BmvNVGc.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/qVKFEi2"><img src="https://i.imgur.com/qVKFEi2.png?1" title="source: imgur.com" /></a>
+<a href="https://imgur.com/0JaMLrQ"><img src="https://i.imgur.com/0JaMLrQ.png?1" title="source: imgur.com" /></a>
+<a href="https://imgur.com/BmvNVGc"><img src="https://i.imgur.com/BmvNVGc.png?1" title="source: imgur.com" /></a>
 
 ## Добавление библиотеки в проект:
 
